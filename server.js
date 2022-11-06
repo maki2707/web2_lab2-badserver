@@ -34,7 +34,6 @@ app.get('/', async function (req, res){
   res.render("attack", {
       title: "attack",  
   }) 
-  console.log(req.session)
 });
 
 /****************************** E N D    O F     R  O  U  T  E  S *********************************************************************************/
