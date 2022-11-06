@@ -36,6 +36,14 @@ app.get('/', async function (req, res){
   }) 
 });
 
+app.get('/instantattack/vuln', async function (req, res){  
+  res.render("instantattackonvuln",{}) 
+});
+
+app.get('/instantattack/safe', async function (req, res){  
+  res.render("instantattacksafe",{}) 
+});
+
 /****************************** E N D    O F     R  O  U  T  E  S *********************************************************************************/
 if (externalUrl) {
   const hostname = "127.0.0.1";
