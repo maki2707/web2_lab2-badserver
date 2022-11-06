@@ -32,7 +32,7 @@ app.use(session(
 app.get('/', async function (req, res){  
  
   res.render("attack", {
-      title: "attack",      
+      title: "attack",  
   }) 
   console.log(req.session)
 });
